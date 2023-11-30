@@ -1,8 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
+import 'fonts.css';
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-
         html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
@@ -79,7 +78,31 @@ const GlobalStyle = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
         box-sizing: border-box;
     }
+    input:focus {
+        outline: unset;
+        box-shadow: none; 
+        border: 1px solid white; 
+    }
+   // css
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-text-fill-color: #fff;
+    -webkit-box-shadow: 0 0 0px 1000px #111 inset;
+    box-shadow: 0 0 0px 1000px #111 inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
 
+input:autofill,
+input:autofill:hover,
+input:autofill:focus,
+input:autofill:active {
+	-webkit-text-fill-color: #fff;
+    -webkit-box-shadow: 0 0 0px 1000px #111 inset;
+    box-shadow: 0 0 0px 1000px #111 inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
 `;
 
 export default GlobalStyle;
