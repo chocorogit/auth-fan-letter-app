@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import fakeData from 'fakeData.json';
 
-const initialState = fakeData;
+const initialState = fakeData.lettercards;
 
 const lettersSlice = createSlice({
     name: 'letters',

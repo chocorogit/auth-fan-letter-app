@@ -1,7 +1,11 @@
 import React from 'react';
+import styled from 'styled-components';
 
 const Profile = () => {
-    return <div>Profile</div>;
+    return <Container>Profile</Container>;
 };
 
+const Container = styled.div`
+    color: #fff;
+`;
 export default Profile;
